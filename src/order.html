@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Order | Campus Bites</title>
+</head>
+<body>
+    <div class="notice">
+        Campus Special: Crispy Zinger Combo + Drink — Rs. 350 at Counter 2
+    </div>
+
+    <header class="topbar">
+        <div class="navwrap">
+            <a class="brand" href="index.html">
+                <span class="brandmark">CB</span>
+                <span>
+                    <span class="brandname">Campus Bites</span>
+                    <span class="brandsub">UCP Main Cafeteria</span>
+                </span>
+            </a>
+
+            <nav class="nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="deals.html">Daily Deals</a>
+                <a href="order.html" class="active">How to Order</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <a class="pill headerbtn" href="menu.html">Explore Menu</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-inner">
+            <div>
+                <span class="eyebrow">Simple • Fast • Convenient</span>
+                <h1>How to Order<br>at Campus Bites</h1>
+                <p>
+                    Three simple steps from choosing your food
+                    to enjoying a fresh meal.
+                </p>
+                <a class="btn outline" href="#order-builder">
+                    Build a Sample Order
+                </a>
+            </div>
+            <div class="hero-emoji" aria-hidden="true">🧾</div>
+        </div>
+    </section>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>It's as easy as 1, 2, 3</h2>
+                    <p>
+                        Our counter ordering process keeps your lunch break simple.
+                    </p>
+                </div>
+
+                <div class="steps">
+                    <div class="step">
+                        <div class="stepnumber">01</div>
+                        <h3>Explore the menu</h3>
+                        <p>Browse the online menu or check the digital menu boards.</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="stepnumber">02</div>
+                        <h3>Pay & collect your token</h3>
+                        <p>Confirm your order and pay at the cafeteria counter.</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="stepnumber">03</div>
+                        <h3>Pick up & enjoy</h3>
+                        <p>Collect your meal when your token number is called.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="order-builder">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Plan your order</h2>
+                    <p>Estimate your meal cost before visiting the counter.</p>
+                </div>
+
+                <div class="twocol">
+                    <div class="panel">
+                        <h2>Choose your food</h2>
+                        <div class="field">
+                            <label for="food">Menu item or deal</label>
+                            <select id="food">
+                                <option value="Special Chicken Biryani"
+                                    data-price="250">
+                                    Special Chicken Biryani — Rs. 250
+                                </option>
+                                <option value="Campus Supreme Burger"
+                                    data-price="320">
+                                    Campus Supreme Burger — Rs. 320
+                                </option>
+                                <option value="Fresh Coffee" data-price="160">
+                                    Fresh Coffee — Rs. 160
+                                </option>
+                                <option value="Zinger Combo + Drink"
+                                    data-price="350">
+                                    Zinger Combo + Drink — Rs. 350
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="quantity">Quantity</label>
+                            <input
+                                id="quantity"
+                                type="number"
+                                min="1"
+                                max="20"
+                                value="1"
+                            >
+                        </div>
+
+                        <button class="btn" type="button" id="add">
+                            + Add to List
+                        </button>
+                    </div>
+
+                    <div class="panel">
+                        <h2>Your order summary</h2>
+                        <div id="cart">
+                            <p class="empty">
+                                Your list is empty. Choose an item to start.
+                            </p>
+                        </div>
+                        <div class="summary">
+                            <span>Estimated total</span>
+                            <span id="total">Rs. 0</span>
+                        </div>
+                        <button class="btn" id="copy" type="button">
+                            Copy Order List
+                        </button>
+                        <p id="copy-status"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Good to know</h2>
+                <p>Student Center Building, Ground Floor, UCP Campus</p>
+                <p>Monday–Friday: 8:00 AM – 7:00 PM</p>
+                <p>Saturday: 9:00 AM – 3:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>Campus Bites</h3>
+            <p>Fresh, affordable meals for UCP campus life.</p>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="deals.html">Daily Deals</a>
+            <a href="order.html">How to Order</a>
+            <div class="copyright">
+                © 2026 Campus Bites Cafeteria — UCP. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
