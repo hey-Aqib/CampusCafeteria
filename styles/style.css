@@ -1890,3 +1890,570 @@ a {
         gap: 12px;
     }
 }
+
+/*contact.html css*/
+
+/* =========================================
+   CAMPUS BITES - CONTACT PAGE
+========================================= */
+
+.contact-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 85px 24px 95px;
+    text-align: center;
+    background:
+            radial-gradient(ellipse at 15% 20%, rgba(255, 115, 67, 0.13), transparent 35%),
+            radial-gradient(ellipse at 85% 80%, rgba(255, 183, 77, 0.15), transparent 35%),
+            #fff8f3;
+}
+
+.contact-hero::before,
+.contact-hero::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(235, 100, 57, 0.12);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.contact-hero::before {
+    width: 300px;
+    height: 300px;
+    top: -170px;
+    left: -100px;
+}
+
+.contact-hero::after {
+    width: 350px;
+    height: 350px;
+    right: -160px;
+    bottom: -220px;
+}
+
+.contact-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.contact-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 16px;
+    margin-bottom: 22px;
+    border: 1px solid #f4d8ca;
+    border-radius: 50px;
+    background: #ffffff;
+    color: #bd4c29;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.contact-status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #27ae60;
+    box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.12);
+}
+
+.contact-hero h1 {
+    margin: 0 0 22px;
+    color: #222222;
+    font-size: clamp(36px, 5.5vw, 62px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -2px;
+}
+
+.contact-hero h1 span {
+    color: #e96535;
+}
+
+.contact-hero-content > p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #686868;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.contact-hero-points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.contact-hero-points span {
+    color: #494949;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   MAIN CONTACT LAYOUT
+========================================= */
+
+.contact-main {
+    padding: 75px 24px 90px;
+    background: #ffffff;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 35px;
+    max-width: 1180px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+
+/* =========================================
+   LEFT CONTACT INFORMATION PANEL
+========================================= */
+
+.contact-info-panel {
+    padding: 42px 35px;
+    border-radius: 20px;
+    background: #fff7f1;
+    border: 1px solid #f5e7de;
+}
+
+.contact-small-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #e96535;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.contact-info-panel > h2 {
+    margin: 0 0 15px;
+    color: #242424;
+    font-size: 30px;
+    line-height: 1.35;
+    letter-spacing: -0.8px;
+}
+
+.contact-info-intro {
+    margin: 0 0 34px;
+    color: #737373;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.contact-info-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #f4dfd2;
+    border-radius: 13px;
+    background: #ffffff;
+    font-size: 20px;
+}
+
+.contact-info-item h3 {
+    margin: 2px 0 7px;
+    color: #282828;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.contact-info-item p,
+.contact-info-item a {
+    display: block;
+    margin: 0 0 5px;
+    color: #4e4e4e;
+    font-size: 12px;
+    line-height: 1.7;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-info-item a:hover {
+    color: #e96535;
+}
+
+.contact-info-item > div:last-child > span {
+    display: block;
+    color: #898989;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.contact-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 35px;
+    padding: 18px;
+    border: 1px solid #f3ddc6;
+    border-radius: 13px;
+    background: #fffdf9;
+}
+
+.contact-note-icon {
+    font-size: 22px;
+}
+
+.contact-note h4 {
+    margin: 0 0 7px;
+    color: #343434;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.contact-note p {
+    margin: 0;
+    color: #797979;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   RIGHT CONTACT FORM
+========================================= */
+
+.contact-form-panel {
+    padding: 42px;
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.045);
+}
+
+.contact-form-heading {
+    margin-bottom: 30px;
+}
+
+.contact-form-heading h2 {
+    margin: 0 0 12px;
+    color: #252525;
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+}
+
+.contact-form-heading p {
+    margin: 0;
+    color: #818181;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.contact-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+
+.contact-field label {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 14px 15px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    outline: none;
+    background: #fcfcfc;
+    color: #333333;
+    font-family: inherit;
+    font-size: 12px;
+    transition: border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.contact-field input,
+.contact-field select {
+    min-height: 47px;
+}
+
+.contact-field textarea {
+    min-height: 135px;
+    resize: vertical;
+    line-height: 1.8;
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+    color: #aaaaaa;
+}
+
+.contact-field select {
+    cursor: pointer;
+}
+
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus {
+    border-color: #e96535;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(233, 101, 53, 0.09);
+}
+
+.contact-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #777777;
+    font-size: 11px;
+    line-height: 1.8;
+    cursor: pointer;
+}
+
+.contact-checkbox input {
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    accent-color: #e96535;
+    cursor: pointer;
+}
+
+.contact-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    min-height: 53px;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #e96535;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contact-submit-btn span {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.contact-submit-btn:hover {
+    background: #cf4f24;
+    transform: translateY(-2px);
+}
+
+.contact-submit-btn:hover span {
+    transform: translateX(4px);
+}
+
+.contact-form-footnote {
+    margin: -10px 0 0;
+    color: #999999;
+    font-size: 10px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/* =========================================
+   BOTTOM FEEDBACK BANNER
+========================================= */
+
+.contact-bottom-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1120px;
+    margin: 0 auto 80px;
+    padding: 38px 42px;
+    border-radius: 18px;
+    background: #252525;
+    color: #ffffff;
+}
+
+.contact-bottom-cta .contact-small-label {
+    margin-bottom: 10px;
+    color: #ff9b70;
+}
+
+.contact-bottom-cta h2 {
+    margin: 0 0 10px;
+    font-size: clamp(20px, 3vw, 27px);
+    line-height: 1.4;
+}
+
+.contact-bottom-cta p {
+    margin: 0;
+    color: #c1c1c1;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.contact-feedback-btn {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #282828;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.contact-feedback-btn:hover {
+    background: #e96535;
+    color: #ffffff;
+}
+
+.contact-feedback-btn span {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        max-width: 720px;
+    }
+
+    .contact-info-panel {
+        padding: 35px;
+    }
+
+    .contact-info-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .contact-note {
+        margin-top: 30px;
+    }
+
+    .contact-bottom-cta {
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-hero {
+        padding: 65px 20px 70px;
+    }
+
+    .contact-hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .contact-hero-content > p {
+        font-size: 14px;
+    }
+
+    .contact-hero-points {
+        gap: 12px 18px;
+    }
+
+    .contact-hero-points span {
+        font-size: 10px;
+    }
+
+    .contact-main {
+        padding: 45px 16px 55px;
+    }
+
+    .contact-layout {
+        gap: 22px;
+    }
+
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .contact-info-panel > h2 {
+        font-size: 26px;
+    }
+
+    .contact-info-list {
+        grid-template-columns: 1fr;
+        gap: 23px;
+    }
+
+    .contact-form-heading h2 {
+        font-size: 25px;
+    }
+
+    .contact-form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-bottom-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        margin: 0 16px 45px;
+        padding: 28px 23px;
+    }
+
+    .contact-feedback-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
