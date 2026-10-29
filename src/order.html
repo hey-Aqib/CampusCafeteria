@@ -498,5 +498,131 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+        const cart = [];
+
+        const food = document.querySelector('#food');
+        const qty = document.querySelector('#quantity');
+
+        const param = new URLSearchParams(location.search).get('item');
+
+        if (param) {
+            const target = [...food.options].find(
+                option => option.value === param
+            );
+
+            if (target) {
+                food.value = target.value;
+            }
+        }
+
+        const money = amount =>
+            'Rs. ' + amount.toLocaleString('en-PK');
+
+        function render() {
+            const root = document.querySelector('#cart');
+
+            root.innerHTML = cart.length
+                ? cart.map((item, index) => `
+                    <div class="cartrow">
+                        <span>
+                            <strong>${item.name}</strong><br>
+                            ${item.quantity} × ${money(item.price)}
+                        </span>
+
+                        <span>
+                            ${money(item.quantity * item.price)}
+                            <button
+                                type="button"
+                                data-index="${index}"
+                                aria-label="Remove item"
+                            >
+                                ✕
+                            </button>
+                        </span>
+                    </div>
+                `).join('')
+                : '<p class="empty">Your list is empty. Choose an item to start.</p>';
+
+            document.querySelector('#total').textContent = money(
+                cart.reduce(
+                    (sum, item) => sum + item.quantity * item.price,
+                    0
+                )
+            );
+
+            root.querySelectorAll('button[data-index]').forEach(button => {
+                button.onclick = () => {
+                    cart.splice(Number(button.dataset.index), 1);
+                    render();
+                };
+            });
+        }
+
+        document.querySelector('#add').onclick = () => {
+            const quantity = Number(qty.value);
+
+            if (
+                !Number.isInteger(quantity) ||
+                quantity < 1 ||
+                quantity > 20
+            ) {
+                alert('Choose a quantity between 1 and 20.');
+                return;
+            }
+
+            const option = food.selectedOptions[0];
+            const name = option.value;
+            const price = Number(option.dataset.price);
+
+            const existing = cart.find(item => item.name === name);
+
+            if (existing) {
+                existing.quantity += quantity;
+            } else {
+                cart.push({
+                    name,
+                    price,
+                    quantity
+                });
+            }
+
+            render();
+        };
+
+        document.querySelector('#copy').onclick = async () => {
+            const status = document.querySelector('#copy-status');
+
+            if (!cart.length) {
+                status.textContent = 'Add an item first.';
+                return;
+            }
+
+            const orderText = [
+                'Campus Bites — Sample Order',
+                ...cart.map(item =>
+                    `${item.name}: ${item.quantity} x Rs. ${item.price} = ${money(item.quantity * item.price)}`
+                ),
+                'Estimated total: ' + money(
+                    cart.reduce(
+                        (sum, item) => sum + item.price * item.quantity,
+                        0
+                    )
+                ),
+                'Not a confirmed order. Pay at counter.'
+            ].join('\n');
+
+            try {
+                await navigator.clipboard.writeText(orderText);
+                status.textContent = 'Order list copied!';
+            } catch {
+                status.textContent =
+                    'Clipboard unavailable. Please copy the order details manually.';
+            }
+        };
+    </script>
+
 </body>
 </html>
