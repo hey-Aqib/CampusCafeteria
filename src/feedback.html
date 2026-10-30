@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Campus Bites</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>📢 <strong>Today's Campus Special:</strong> Crispy Zinger Combo + Drink only Rs. 350! Available at Counter 2.</p>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-badge">CB</span>
+                <div class="logo-text">
+                    <span class="logo-title">Campus Bites</span>
+                    <span class="logo-subtitle">UCP Main Cafeteria</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="deals.html" class="nav-link">Daily Deals</a></li>
+                    <li><a href="order.html" class="nav-link">How to Order</a></li>
+                    <li><a href="feedback.html" class="nav-link active">Feedback</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="menu.html" class="btn btn-sm btn-primary">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <section class="feedback-section">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="sub-heading">Student Feedback</span>
+                    <h2>Tell Us How We Are Doing</h2>
+                    <p>Share what you liked, what we can improve, or suggest a new item for the menu. For phone, email or location details, visit our <a href="contact.html" class="feedback-link">Contact page</a>.</p>
+                </div>
+
+                <div class="feedback-card">
+                    <h3 class="feedback-card-title">Feedback Form</h3>
+
+                    <!-- Static form: no backend required -->
+                    <form class="feedback-form" action="#" method="post">
+                        <div class="feedback-field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+
+                        <div class="feedback-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="feedback-field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Write your feedback here" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg feedback-submit">Send Feedback</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="logo footer-logo">
+                    <span class="logo-badge">CB</span>
+                    <span class="logo-title">Campus Bites</span>
+                </div>
+                <p>The official cafeteria dining portal for University of Central Punjab. Fresh meals, energized campus.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu</a></li>
+                    <li><a href="deals.html">Daily Deals</a></li>
+                    <li><a href="order.html">How to Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support & Hours</h4>
+                <ul>
+                    <li><a href="feedback.html">Student Feedback</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><span>Mon - Fri: 8 AM - 7 PM</span></li>
+                    <li><span>Sat: 9 AM - 3 PM</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Campus Bites Cafeteria - UCP. All rights reserved.</p>
+            <p class="credits">Designed & Developed by Campus Bites Project Team</p>
+        </div>
+    </footer>
+
+</body>
+</html>
