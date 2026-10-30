@@ -2,349 +2,540 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Full Menu | Campus Bites</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Campus Bites</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
+<body>
 
-<body class="menu-page">
-
-    <div class="notice">
-        Campus Special: Crispy Zinger Combo + Drink — Rs. 350 at Counter 2
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        Fresh food, made for campus life!
     </div>
 
-    <header class="topbar">
-        <div class="navwrap">
-            <a class="brand" href="index.html">
-                <span class="brandmark">CB</span>
-                <span>
-                    <span class="brandname">Campus Bites</span>
-                    <span class="brandsub">UCP Main Cafeteria</span>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-badge">CB</span>
+                <span class="logo-text">
+                    <span class="logo-title">Campus Bites</span>
+                    <span class="logo-subtitle">UCP Main Cafeteria</span>
                 </span>
             </a>
 
-            <nav class="nav" aria-label="Main navigation">
-                <a href="index.html">Home</a>
-                <a href="menu.html" class="active">Menu</a>
-                <a href="deals.html">Daily Deals</a>
-                <a href="order.html">How to Order</a>
-                <a href="feedback.html">Feedback</a>
-                <a href="contact.html">Contact</a>
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                    <li><a href="menu.html#deals" class="nav-link">Daily Deals</a></li>
+                    <li><a href="order.html" class="nav-link">How to Order</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
             </nav>
 
-            <a class="pill headerbtn" href="menu.html">Explore Menu</a>
+            <a href="order.html" class="btn btn-primary btn-sm header-cta">
+                Order Now
+            </a>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero-inner">
-            <div>
-                <span class="eyebrow">Fresh • Tasty • Student-friendly</span>
-                <h1>Explore Our <br>Campus Menu</h1>
+    <main>
+
+        <!-- Menu Hero Section -->
+        <section class="menu-hero">
+            <div class="container menu-hero-content">
+                <span class="menu-eyebrow">GOOD FOOD, GOOD MOOD</span>
+
+                <h1>Explore Our Menu</h1>
+
                 <p>
-                    Great food, quick breaks, better campus days.
-                    Find your next favorite bite from our curated selection.
+                    From quick campus snacks to filling meals,
+                    find something delicious for every craving.
                 </p>
-                <a class="btn outline" href="deals.html">See Student Deals →</a>
+
+                <a href="#menu-items" class="btn btn-primary">
+                    Browse Menu
+                </a>
             </div>
+        </section>
 
-            <div class="hero-emoji" aria-hidden="true">🍔</div>
-        </div>
-    </section>
+        <!-- Menu Items Section -->
+        <section class="menu-section" id="menu-items">
+            <div class="container">
 
-    <main class="section">
-        <div class="container">
-
-            <div class="section-head">
-                <h2>Something for every craving</h2>
-                <p>
-                    Browse by category or search for your favorite.
-                    Prices are illustrative; confirm at the counter.
-                </p>
-            </div>
-
-            <div class="chiprow" id="filters">
-                <button class="chip active" data-filter="All">All items</button>
-                <button class="chip" data-filter="Lunch">Lunch</button>
-                <button class="chip" data-filter="Burgers">Burgers</button>
-                <button class="chip" data-filter="Snacks">Snacks</button>
-                <button class="chip" data-filter="Beverages">Beverages</button>
-            </div>
-
-            <div class="field" style="max-width:360px">
-                <label for="search">Search menu</label>
-                <input id="search" type="search"
-                       placeholder="Search biryani, burger, fries...">
-            </div>
-
-            <div class="grid" id="menu-grid">
-
-                <article class="item" data-category="Lunch"
-                         data-search="special chicken biryani student favorite">
-                    <img loading="lazy"
-                         src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=900&auto=format&fit=crop&q=80"
-                         alt="Special Chicken Biryani">
-
-                    <div class="item-body">
-                        <div class="item-tags">
-                            <span class="small-tag">Lunch</span>
-                            <span class="small-tag favorite-tag">Student Favorite</span>
-                        </div>
-
-                        <h3>Special Chicken Biryani</h3>
-                        <p>Aromatic rice, warm spices and juicy chicken.</p>
-
-                        <div class="item-bottom">
-                            <span class="price">Rs. 250</span>
-                            <a class="btn" href="order.html?item=Special%20Chicken%20Biryani">Order →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="item" data-category="Burgers"
-                         data-search="campus supreme burger popular">
-                    <img loading="lazy"
-                         src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&auto=format&fit=crop&q=80"
-                         alt="Campus Supreme Burger">
-
-                    <div class="item-body">
-                        <div class="item-tags">
-                            <span class="small-tag">Burgers</span>
-                            <span class="small-tag popular-tag">Popular</span>
-                        </div>
-
-                        <h3>Campus Supreme Burger</h3>
-                        <p>Juicy patty, fresh vegetables and house sauce.</p>
-
-                        <div class="item-bottom">
-                            <span class="price">Rs. 320</span>
-                            <a class="btn" href="order.html?item=Campus%20Supreme%20Burger">Order →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="item" data-category="Snacks"
-                         data-search="classic club sandwich">
-                    <img loading="lazy"
-                         src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=900&auto=format&fit=crop&q=80"
-                         alt="Classic Club Sandwich">
-
-                    <div class="item-body">
-                        <span class="small-tag">Snacks</span>
-                        <h3>Classic Club Sandwich</h3>
-                        <p>Toasted bread, chicken, egg and crisp lettuce.</p>
-
-                        <div class="item-bottom">
-                            <span class="price">Rs. 220</span>
-                            <a class="btn" href="order.html?item=Classic%20Club%20Sandwich">Order →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="item" data-category="Lunch"
-                         data-search="chicken fajita pizza">
-                    <img loading="lazy"
-                         src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=900&auto=format&fit=crop&q=80"
-                         alt="Chicken Fajita Pizza">
-
-                    <div class="item-body">
-                        <span class="small-tag">Lunch</span>
-                        <h3>Chicken Fajita Pizza</h3>
-                        <p>Melted cheese, fajita chicken and peppers.</p>
-
-                        <div class="item-bottom">
-                            <span class="price">Rs. 480</span>
-                            <a class="btn" href="order.html?item=Chicken%20Fajita%20Pizza">Order →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="item" data-category="Snacks"
-                         data-search="loaded french fries">
-                    <img loading="lazy"
-                         src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=900&auto=format&fit=crop&q=80"
-                         alt="Loaded French Fries">
-
-                    <div class="item-body">
-                        <span class="small-tag">Snacks</span>
-                        <h3>Loaded French Fries</h3>
-                        <p>Golden fries topped with signature sauce.</p>
-
-                        <div class="item-bottom">
-                            <span class="price">Rs. 180</span>
-                            <a class="btn" href="order.html?item=Loaded%20French%20Fries">Order →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="item" data-category="Beverages"
-                         data-search="karak doodh patti samosa">
-                    <img loading="lazy"
-                         src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=900&auto=format&fit=crop&q=80"
-                         alt="Karak Doodh Patti and Samosa">
-
-                    <div class="item-body">
-                        <span class="small-tag">Beverages</span>
-                        <h3>Karak Doodh Patti &amp; Samosa</h3>
-                        <p>Strong milk tea with two crispy samosas.</p>
-
-                        <div class="item-bottom">
-                            <span class="price">Rs. 110</span>
-                            <a class="btn" href="order.html?item=Karak%20Doodh%20Patti">Order →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="item" data-category="Snacks"
-                         data-search="grilled chicken wrap">
-                    <img loading="lazy"
-                         src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=900&auto=format&fit=crop&q=80"
-                         alt="Grilled Chicken Wrap">
-
-                    <div class="item-body">
-                        <span class="small-tag">Snacks</span>
-                        <h3>Grilled Chicken Wrap</h3>
-                        <p>Warm tortilla filled with grilled chicken.</p>
-
-                        <div class="item-bottom">
-                            <span class="price">Rs. 260</span>
-                            <a class="btn" href="order.html?item=Grilled%20Chicken%20Wrap">Order →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="item" data-category="Lunch"
-                         data-search="creamy chicken pasta">
-                    <img loading="lazy"
-                         src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=900&auto=format&fit=crop&q=80"
-                         alt="Creamy Chicken Pasta">
-
-                    <div class="item-body">
-                        <span class="small-tag">Lunch</span>
-                        <h3>Creamy Chicken Pasta</h3>
-                        <p>Creamy sauce, pasta and tender chicken.</p>
-
-                        <div class="item-bottom">
-                            <span class="price">Rs. 390</span>
-                            <a class="btn" href="order.html?item=Creamy%20Chicken%20Pasta">Order →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="item" data-category="Beverages"
-                         data-search="fresh coffee">
-                    <img loading="lazy"
-                         src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&auto=format&fit=crop&q=80"
-                         alt="Fresh Coffee">
-
-                    <div class="item-body">
-                        <span class="small-tag">Beverages</span>
-                        <h3>Fresh Coffee</h3>
-                        <p>Warm, rich coffee for your study breaks.</p>
-
-                        <div class="item-bottom">
-                            <span class="price">Rs. 160</span>
-                            <a class="btn" href="order.html?item=Fresh%20Coffee">Order →</a>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-
-            <p class="empty hidden" id="noresults">
-                No menu items match your search.
-            </p>
-
-            <div class="info-banner">
-                <div>
-                    <h3>Hungry and ready to order?</h3>
-                    <p>Choose your meal, then follow our quick counter ordering guide.</p>
+                <div class="section-header">
+                    <span class="section-subtitle">WHAT'S COOKING?</span>
+                    <h2>Our Food Collection</h2>
+                    <p>Choose your favourite meal from our menu.</p>
                 </div>
-                <a class="btn" href="order.html">How to Order →</a>
-            </div>
 
-        </div>
+                <!-- Search and Category Filters -->
+                <div class="menu-controls">
+
+                    <div class="menu-filters">
+                        <button class="menu-filter active" data-category="all">
+                            All
+                        </button>
+
+                        <button class="menu-filter" data-category="lunch">
+                            Lunch
+                        </button>
+
+                        <button class="menu-filter" data-category="burgers">
+                            Burgers
+                        </button>
+
+                        <button class="menu-filter" data-category="snacks">
+                            Snacks
+                        </button>
+
+                        <button class="menu-filter" data-category="beverages">
+                            Beverages
+                        </button>
+                    </div>
+
+                    <input
+                        type="text"
+                        id="menuSearch"
+                        class="menu-search"
+                        placeholder="Search food..."
+                        aria-label="Search menu items"
+                    >
+
+                </div>
+
+                <!-- Food Cards -->
+                <div class="menu-grid">
+
+                    <!-- Chicken Biryani -->
+                    <article
+                        class="food-card menu-card"
+                        data-category="lunch"
+                        data-name="chicken biryani"
+                    >
+                        <div class="menu-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1563379091339-03246963d96a?w=600"
+                                alt="Chicken Biryani"
+                            >
+                            <span class="menu-badge menu-popular-tag">
+                                Popular
+                            </span>
+                        </div>
+
+                        <div class="food-details">
+                            <span class="category-tag">Lunch</span>
+                            <h3>Chicken Biryani</h3>
+                            <p>
+                                Spiced rice served with tender chicken and raita.
+                            </p>
+
+                            <div class="food-footer">
+                                <span class="price">Rs. 350</span>
+                                <a
+                                    href="order.html?item=Chicken%20Biryani"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Zinger Burger -->
+                    <article
+                        class="food-card menu-card"
+                        data-category="burgers"
+                        data-name="zinger burger"
+                    >
+                        <div class="menu-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600"
+                                alt="Zinger Burger"
+                            >
+                        </div>
+
+                        <div class="food-details">
+                            <span class="category-tag">Burgers</span>
+                            <h3>Zinger Burger</h3>
+                            <p>
+                                Crispy chicken fillet with fresh vegetables and sauce.
+                            </p>
+
+                            <div class="food-footer">
+                                <span class="price">Rs. 450</span>
+                                <a
+                                    href="order.html?item=Zinger%20Burger"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Club Sandwich -->
+                    <article
+                        class="food-card menu-card"
+                        data-category="snacks"
+                        data-name="club sandwich"
+                    >
+                        <div class="menu-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600"
+                                alt="Club Sandwich"
+                            >
+                        </div>
+
+                        <div class="food-details">
+                            <span class="category-tag">Snacks</span>
+                            <h3>Club Sandwich</h3>
+                            <p>
+                                Freshly prepared sandwich with chicken and vegetables.
+                            </p>
+
+                            <div class="food-footer">
+                                <span class="price">Rs. 300</span>
+                                <a
+                                    href="order.html?item=Club%20Sandwich"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Chicken Pizza -->
+                    <article
+                        class="food-card menu-card"
+                        data-category="lunch"
+                        data-name="chicken pizza"
+                    >
+                        <div class="menu-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600"
+                                alt="Chicken Pizza"
+                            >
+                        </div>
+
+                        <div class="food-details">
+                            <span class="category-tag">Lunch</span>
+                            <h3>Chicken Pizza</h3>
+                            <p>
+                                Cheesy pizza topped with chicken and fresh ingredients.
+                            </p>
+
+                            <div class="food-footer">
+                                <span class="price">Rs. 500</span>
+                                <a
+                                    href="order.html?item=Chicken%20Pizza"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Loaded Fries -->
+                    <article
+                        class="food-card menu-card"
+                        data-category="snacks"
+                        data-name="loaded fries"
+                    >
+                        <div class="menu-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600"
+                                alt="Loaded Fries"
+                            >
+                            <span class="menu-badge">
+                                Student Favourite
+                            </span>
+                        </div>
+
+                        <div class="food-details">
+                            <span class="category-tag">Snacks</span>
+                            <h3>Loaded Fries</h3>
+                            <p>
+                                Crispy golden fries topped with delicious sauces.
+                            </p>
+
+                            <div class="food-footer">
+                                <span class="price">Rs. 250</span>
+                                <a
+                                    href="order.html?item=Loaded%20Fries"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tea and Samosa -->
+                    <article
+                        class="food-card menu-card"
+                        data-category="beverages"
+                        data-name="tea and samosa"
+                    >
+                        <div class="menu-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600"
+                                alt="Tea"
+                            >
+                        </div>
+
+                        <div class="food-details">
+                            <span class="category-tag">Beverages</span>
+                            <h3>Tea & Samosa</h3>
+                            <p>
+                                A classic campus combination for your break.
+                            </p>
+
+                            <div class="food-footer">
+                                <span class="price">Rs. 150</span>
+                                <a
+                                    href="order.html?item=Tea%20and%20Samosa"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Chicken Wrap -->
+                    <article
+                        class="food-card menu-card"
+                        data-category="snacks"
+                        data-name="chicken wrap"
+                    >
+                        <div class="menu-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600"
+                                alt="Chicken Wrap"
+                            >
+                        </div>
+
+                        <div class="food-details">
+                            <span class="category-tag">Snacks</span>
+                            <h3>Chicken Wrap</h3>
+                            <p>
+                                Grilled chicken wrapped with fresh vegetables and sauce.
+                            </p>
+
+                            <div class="food-footer">
+                                <span class="price">Rs. 320</span>
+                                <a
+                                    href="order.html?item=Chicken%20Wrap"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Creamy Pasta -->
+                    <article
+                        class="food-card menu-card"
+                        data-category="lunch"
+                        data-name="creamy pasta"
+                    >
+                        <div class="menu-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600"
+                                alt="Creamy Pasta"
+                            >
+                        </div>
+
+                        <div class="food-details">
+                            <span class="category-tag">Lunch</span>
+                            <h3>Creamy Pasta</h3>
+                            <p>
+                                Creamy pasta prepared with herbs and delicious seasoning.
+                            </p>
+
+                            <div class="food-footer">
+                                <span class="price">Rs. 400</span>
+                                <a
+                                    href="order.html?item=Creamy%20Pasta"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Iced Coffee -->
+                    <article
+                        class="food-card menu-card"
+                        data-category="beverages"
+                        data-name="iced coffee"
+                    >
+                        <div class="menu-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600"
+                                alt="Iced Coffee"
+                            >
+                        </div>
+
+                        <div class="food-details">
+                            <span class="category-tag">Beverages</span>
+                            <h3>Iced Coffee</h3>
+                            <p>
+                                Chilled coffee for a refreshing campus break.
+                            </p>
+
+                            <div class="food-footer">
+                                <span class="price">Rs. 280</span>
+                                <a
+                                    href="order.html?item=Iced%20Coffee"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- No Results Message -->
+                <div id="noResults" class="menu-empty hidden">
+                    <h3>No food items found</h3>
+                    <p>
+                        Try searching with another name or category.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Order Information Section -->
+        <section class="menu-info-section" id="deals">
+            <div class="container">
+                <div class="menu-info-banner">
+
+                    <div>
+                        <span class="section-subtitle">READY TO ORDER?</span>
+                        <h2>Your next meal is just a click away!</h2>
+                        <p>
+                            Choose your favourite food and place your order.
+                        </p>
+                    </div>
+
+                    <a href="order.html" class="btn btn-primary">
+                        Place an Order
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footgrid">
-                <div>
-                    <h3>Campus Bites</h3>
-                    <p>Fresh, affordable meals for UCP campus life.</p>
-                    <p>Student Center Building, Ground Floor, UCP Campus</p>
-                </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
 
-                <div>
-                    <h4>Explore</h4>
-                    <a href="index.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="deals.html">Daily Deals</a>
-                    <a href="order.html">How to Order</a>
-                </div>
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo">
+                    <span class="logo-badge">CB</span>
 
-                <div>
-                    <h4>Opening hours</h4>
-                    <p>Mon–Fri: 8:00 AM – 7:00 PM</p>
-                    <p>Saturday: 9:00 AM – 3:00 PM</p>
-                    <p>Sunday: Closed</p>
-                </div>
+                    <span class="logo-text">
+                        <span class="logo-title">Campus Bites</span>
+                        <span class="logo-subtitle">UCP Main Cafeteria</span>
+                    </span>
+                </a>
+
+                <p>
+                    Serving fresh and delicious meals to make your campus life better.
+                </p>
             </div>
 
-            <div class="copyright">
-                © 2026 Campus Bites Cafeteria — UCP. All rights reserved.
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">How to Order</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
             </div>
+
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday</p>
+                <p>8:00 AM - 6:00 PM</p>
+                <p>Saturday - Sunday</p>
+                <p>Closed</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Campus Bites. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Menu Filtering and Search JavaScript -->
     <script>
-        const chips = document.querySelectorAll('.chip');
-        const items = document.querySelectorAll('.item');
-        const searchInput = document.querySelector('#search');
-        const noResults = document.querySelector('#noresults');
+        const filterButtons = document.querySelectorAll(".menu-filter");
+        const menuCards = document.querySelectorAll(".menu-card");
+        const searchInput = document.getElementById("menuSearch");
+        const noResults = document.getElementById("noResults");
 
-        let category = 'All';
+        let selectedCategory = "all";
 
         function filterMenu() {
-            const query = searchInput.value.trim().toLowerCase();
-            let count = 0;
+            const searchText = searchInput.value.toLowerCase().trim();
+            let visibleItems = 0;
 
-            items.forEach(item => {
+            menuCards.forEach(card => {
+                const category = card.dataset.category;
+                const name = card.dataset.name.toLowerCase();
+                const cardText = card.textContent.toLowerCase();
+
                 const matchesCategory =
-                    category === 'All' ||
-                    item.dataset.category === category;
+                    selectedCategory === "all" ||
+                    category === selectedCategory;
 
                 const matchesSearch =
-                    item.dataset.search.toLowerCase().includes(query);
+                    name.includes(searchText) ||
+                    cardText.includes(searchText);
 
-                const show = matchesCategory && matchesSearch;
-
-                item.classList.toggle('hidden', !show);
-
-                if (show) {
-                    count++;
+                if (matchesCategory && matchesSearch) {
+                    card.style.display = "block";
+                    visibleItems++;
+                } else {
+                    card.style.display = "none";
                 }
             });
 
-            noResults.classList.toggle('hidden', count > 0);
+            noResults.classList.toggle("hidden", visibleItems > 0);
         }
 
-        chips.forEach(button => {
-            button.addEventListener('click', () => {
-                chips.forEach(chip => chip.classList.remove('active'));
+        // Category Filter Buttons
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                filterButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
 
-                button.classList.add('active');
-                category = button.dataset.filter;
+                button.classList.add("active");
+                selectedCategory = button.dataset.category;
 
                 filterMenu();
             });
         });
 
-        searchInput.addEventListener('input', filterMenu);
+        // Search Input
+        searchInput.addEventListener("input", filterMenu);
     </script>
 
 </body>
