@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Order | Campus Bites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="announcement-bar">
+        📢 Campus Special: Crispy Zinger Combo + Drink — Rs. 350 at Counter 2
+    </div>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a class="logo" href="index.html">
+                <span class="logo-badge">CB</span>
+                <span class="logo-text">
+                    <span class="logo-title">Campus Bites</span>
+                    <span class="logo-subtitle">UCP Main Cafeteria</span>
+                </span>
+            </a>
+
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li><a class="nav-link" href="deals.html">Daily Deals</a></li>
+                    <li><a class="nav-link active" href="order.html">How to Order</a></li>
+                    <li><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn btn-sm btn-primary header-cta" href="menu.html">Explore Menu</a>
+        </div>
+    </header>
+
+    <section class="order-hero">
+        <div class="container order-hero-content">
+            <div>
+                <span class="order-eyebrow">Simple • Fast • Convenient</span>
+                <h1>How to Order<br>at Campus Bites</h1>
+                <p>Three simple steps from choosing your food to enjoying a fresh meal.</p>
+                <a class="btn btn-secondary" href="#order-builder">Build a Sample Order ↓</a>
+            </div>
+            <div class="order-hero-icon" aria-hidden="true">🧾</div>
+        </div>
+    </section>
+
+    <main>
+        <section class="order-section">
+            <div class="container">
+                <div class="section-header order-section-header">
+                    <h2>It's as easy as 1, 2, 3</h2>
+                    <p>Our counter ordering process keeps your lunch break simple.</p>
+                </div>
+
+                <div class="order-steps-grid">
+                    <article class="order-step-card">
+                        <div class="order-step-number">01</div>
+                        <h3>Explore the menu</h3>
+                        <p>Browse the online menu or check the digital menu boards at the cafeteria.</p>
+                    </article>
+                    <article class="order-step-card">
+                        <div class="order-step-number">02</div>
+                        <h3>Pay &amp; collect your token</h3>
+                        <p>Visit the cafeteria token counter, confirm your order and pay using the payment methods accepted there.</p>
+                    </article>
+                    <article class="order-step-card">
+                        <div class="order-step-number">03</div>
+                        <h3>Pick up &amp; enjoy</h3>
+                        <p>Keep your token handy and collect your fresh meal when your number is called.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-section order-builder-section" id="order-builder">
+            <div class="container">
+                <div class="section-header order-section-header">
+                    <h2>Plan your order</h2>
+                    <p>Make a sample order and estimate your meal cost before visiting the counter.</p>
+                </div>
+
+                <div class="order-builder-grid">
+                    <section class="order-panel">
+                        <h2>Choose your food</h2>
+                        <div class="order-field">
+                            <label for="food">Menu item or deal</label>
+                            <select id="food">
+                                <option value="Special Chicken Biryani" data-price="250">Special Chicken Biryani — Rs. 250</option>
+                                <option value="Campus Supreme Burger" data-price="320">Campus Supreme Burger — Rs. 320</option>
+                                <option value="Classic Club Sandwich" data-price="220">Classic Club Sandwich — Rs. 220</option>
+                                <option value="Chicken Fajita Pizza" data-price="480">Chicken Fajita Pizza — Rs. 480</option>
+                                <option value="Loaded French Fries" data-price="180">Loaded French Fries — Rs. 180</option>
+                                <option value="Karak Doodh Patti &amp; Samosa" data-price="110">Karak Doodh Patti &amp; Samosa — Rs. 110</option>
+                                <option value="Grilled Chicken Wrap" data-price="260">Grilled Chicken Wrap — Rs. 260</option>
+                                <option value="Creamy Chicken Pasta" data-price="390">Creamy Chicken Pasta — Rs. 390</option>
+                                <option value="Fresh Coffee" data-price="160">Fresh Coffee — Rs. 160</option>
+                                <option value="Zinger Combo + Drink" data-price="350">Zinger Combo + Drink — Rs. 350</option>
+                                <option value="Biryani Lunch Combo" data-price="320">Biryani Lunch Combo — Rs. 320</option>
+                                <option value="Sandwich &amp; Coffee Break" data-price="320">Sandwich &amp; Coffee Break — Rs. 320</option>
+                                <option value="Pizza &amp; Fries Duo" data-price="550">Pizza &amp; Fries Duo — Rs. 550</option>
+                                <option value="Wrap + Drink" data-price="300">Wrap + Drink — Rs. 300</option>
+                                <option value="Tea Time Combo" data-price="110">Tea Time Combo — Rs. 110</option>
+                            </select>
+                        </div>
+
+                        <div class="order-field">
+                            <label for="quantity">Quantity</label>
+                            <input id="quantity" type="number" min="1" max="20" value="1">
+                        </div>
+
+                        <button class="btn btn-sm btn-primary" type="button" id="add">+ Add to List</button>
+                        <div class="order-alert">This is a sample order planner only. It does not submit an order, process a payment or reserve food.</div>
+                        <p class="order-muted">For actual purchase, confirm your selection and pricing at the cafeteria counter.</p>
+                    </section>
+
+                    <section class="order-panel">
+                        <h2>Your order summary</h2>
+                        <div id="cart">
+                            <p class="order-empty">Your list is empty. Choose an item to start.</p>
+                        </div>
+                        <div class="order-total">
+                            <span>Estimated total</span>
+                            <span id="total">Rs. 0</span>
+                        </div>
+                        <button class="btn btn-sm btn-primary" id="copy" type="button">Copy Order List</button>
+                        <p class="order-muted" id="copy-status" aria-live="polite"></p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-section">
+            <div class="container">
+                <div class="section-header order-section-header">
+                    <h2>Good to know</h2>
+                    <p>Everything you need before visiting the cafeteria.</p>
+                </div>
+
+                <div class="order-info-grid">
+                    <section class="order-info-card">
+                        <h3>📍 Where to collect</h3>
+                        <ul>
+                            <li>Student Center Building, Ground Floor, UCP Campus</li>
+                            <li>Near Gate 2 and the Gymnasium, opposite Main Auditorium</li>
+                            <li>Visit the token/payment counter before collection</li>
+                        </ul>
+                    </section>
+                    <section class="order-info-card">
+                        <h3>🕘 When to visit</h3>
+                        <ul>
+                            <li>Monday–Friday: 8:00 AM – 7:00 PM</li>
+                            <li>Saturday: 9:00 AM – 3:00 PM</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+                        <a href="menu.html" class="btn btn-sm btn-primary">Browse Menu →</a>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="logo footer-logo">
+                    <span class="logo-badge">CB</span>
+                    <span class="logo-title">Campus Bites</span>
+                </div>
+                <p>The official cafeteria dining portal for University of Central Punjab. Fresh meals, energized campus.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu</a></li>
+                    <li><a href="deals.html">Daily Deals</a></li>
+                    <li><a href="order.html">How to Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support & Hours</h4>
+                <ul>
+                    <li><a href="feedback.html">Student Feedback</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><span>Mon - Fri: 8 AM - 7 PM</span></li>
+                    <li><span>Sat: 9 AM - 3 PM</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Campus Bites Cafeteria - UCP. All rights reserved.</p>
+            <p class="credits">Designed & Developed by Campus Bites Project Team</p>
+        </div>
+    </footer>
+
+    <script>
+        const cart = [];
+        const food = document.querySelector('#food');
+        const qty = document.querySelector('#quantity');
+        const param = new URLSearchParams(location.search).get('item');
+
+        if (param) {
+            const target = [...food.options].find(option => option.value === param);
+            if (target) food.value = target.value;
+        }
+
+        const money = amount => 'Rs. ' + amount.toLocaleString('en-PK');
+
+        function render() {
+            const root = document.querySelector('#cart');
+
+            root.innerHTML = cart.length
+                ? cart.map((item, index) => `
+                    <div class="order-cart-row">
+                        <span>
+                            <strong>${item.name.replaceAll('&', '&amp;').replaceAll('<', '&lt;')}</strong><br>
+                            ${item.quantity} × ${money(item.price)}
+                        </span>
+                        <span class="order-cart-actions">
+                            ${money(item.quantity * item.price)}
+                            <button type="button" data-index="${index}" aria-label="Remove item">✕</button>
+                        </span>
+                    </div>
+                `).join('')
+                : '<p class="order-empty">Your list is empty. Choose an item to start.</p>';
+
+            document.querySelector('#total').textContent = money(
+                cart.reduce((sum, item) => sum + item.quantity * item.price, 0)
+            );
+
+            root.querySelectorAll('button[data-index]').forEach(button => {
+                button.onclick = () => {
+                    cart.splice(Number(button.dataset.index), 1);
+                    render();
+                };
+            });
+        }
+
+        document.querySelector('#add').onclick = () => {
+            const quantity = Number(qty.value);
+
+            if (!Number.isInteger(quantity) || quantity < 1 || quantity > 20) {
+                alert('Choose a quantity between 1 and 20.');
+                return;
+            }
+
+            const option = food.selectedOptions[0];
+            const name = option.value;
+            const price = Number(option.dataset.price);
+            const existing = cart.find(item => item.name === name);
+
+            if (existing) {
+                existing.quantity += quantity;
+            } else {
+                cart.push({ name, price, quantity });
+            }
+
+            render();
+        };
+
+        document.querySelector('#copy').onclick = async () => {
+            const status = document.querySelector('#copy-status');
+
+            if (!cart.length) {
+                status.textContent = 'Add an item first.';
+                return;
+            }
+
+            const orderText = [
+                'Campus Bites — Sample Order',
+                ...cart.map(item =>
+                    `${item.name}: ${item.quantity} x Rs. ${item.price} = ${money(item.quantity * item.price)}`
+                ),
+                'Estimated total: ' + money(
+                    cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
+                ),
+                'Not a confirmed order. Pay at counter.'
+            ].join('\n');
+
+            try {
+                await navigator.clipboard.writeText(orderText);
+                status.textContent = 'Order list copied!';
+            } catch {
+                status.textContent = 'Clipboard unavailable. Please copy the details shown above.';
+            }
+        };
+    </script>
+</body>
+</html>
