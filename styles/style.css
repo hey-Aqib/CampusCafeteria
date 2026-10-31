@@ -1619,7 +1619,11 @@ a {
 
 .nav a:hover,
 .nav a.active {
-    color: var(--primary);
+    color: #fff;
+    background: var(--primary-gradient);
+    box-shadow: 0 2px 6px rgba(183, 28, 28, 0.25);
+    border-radius: 8px;
+    padding: 10px 14px;
 }
 
 /* Deals page pill button.
@@ -1827,6 +1831,9 @@ a {
 .footer a {
     display: block;
     margin: 8px 0;
+}
+.site-footer .logo-title {
+    color: #ffffff;
 }
 
 .copyright {
