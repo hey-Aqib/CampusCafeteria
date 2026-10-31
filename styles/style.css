@@ -1606,7 +1606,7 @@ a {
 
 .nav {
     display: flex;
-    gap: 25px;
+    gap: 0.5rem;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -1615,11 +1615,21 @@ a {
     font-size: 13px;
     font-weight: 700;
     color: #555864;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
-.nav a:hover,
-.nav a.active {
+.nav a:hover {
     color: var(--primary);
+    background-color: var(--primary-light);
+}
+
+.nav a.active {
+    color: #fff;
+    background: var(--primary-gradient);
+    box-shadow: 0 2px 6px rgba(183, 28, 28, 0.25);
 }
 
 /* Deals page pill button.
@@ -1827,6 +1837,9 @@ a {
 .footer a {
     display: block;
     margin: 8px 0;
+}
+.site-footer .logo-title {
+    color: #ffffff;
 }
 
 .copyright {
