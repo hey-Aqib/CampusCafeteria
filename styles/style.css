@@ -1616,8 +1616,15 @@ a {
     font-weight: 700;
     color: #555864;
 }
+/* 1. Sirf Hover ke liye (Halka effect): */
+.nav a:hover {
+    color: var(--primary);
+    background-color: var(--primary-light);
+    border-radius: 8px;
+    padding: 10px 14px;
+}
 
-.nav a:hover,
+/* 2. Sirf Active button ke liye (Full Red Box): */
 .nav a.active {
     color: #fff;
     background: var(--primary-gradient);
